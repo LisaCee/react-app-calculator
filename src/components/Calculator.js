@@ -22,7 +22,7 @@ class Calculator extends React.Component {
         this.setState({ displayVal: 0 });
     }
 
-    handleSignKey = () => {
+    handleSignKey = (sign) => {
         this.setState({ previousVal: this.state.displayVal, displayVal: 0, signVal: sign });
     }
 
@@ -52,8 +52,8 @@ class Calculator extends React.Component {
             <div>
                 <Display/>
                 <Keyboard
-                  calcKeys={this.state.keys}
-                  onKey={this.handleKeyPress}
+                  keys={this.state.keys}
+                  onKeyPress={this.handleKeyPress}
                   onClearKey={this.handleClearKey}
                   onSignKey={this.handleSignKey}
                   onEqualsKey={this.handleEqualsKey}

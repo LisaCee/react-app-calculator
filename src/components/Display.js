@@ -4,7 +4,8 @@ class Display extends React.Component {
     render() {
         return (
             <div>
-                <span>{this.props.val}</span>
+                <h1>{this.props.val}</h1>
+                <span></span>
             </div>
         )
     }
