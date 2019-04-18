@@ -33,3 +33,5 @@ class Keyboard extends React.Component {
     )
   }
 }
+
+export default Keyboard;
