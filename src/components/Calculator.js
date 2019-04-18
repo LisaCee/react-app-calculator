@@ -50,7 +50,7 @@ class Calculator extends React.Component {
     render() {
         return (
             <div>
-                <Display val={this.state.displayVal} />
+                <Display/>
                 <Keyboard
                   keys={this.state.keys}
                   onKeyPress={this.handleKeyPress}
