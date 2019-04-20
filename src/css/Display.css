@@ -1,4 +1,8 @@
 .display {
     color: white;
     background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    height: 5vh;
+    font-size: 2em;
 }
