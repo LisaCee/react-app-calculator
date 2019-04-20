@@ -2,6 +2,7 @@ import React from 'react';
 import Keyboard from './Keyboard';
 import Display from './Display';
 
+import '../css/Calculator.css';
 
 class Calculator extends React.Component {
     state = {
@@ -56,7 +57,7 @@ class Calculator extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="calculator">
                 <Display val={this.state.displayVal} />
                 <Keyboard
                   keys={this.state.keys}
