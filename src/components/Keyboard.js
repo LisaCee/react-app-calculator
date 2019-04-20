@@ -4,7 +4,7 @@ import '../css/Keyboard.css';
 class Keyboard extends React.Component {
   render () {
     return (
-      <div>
+      <div className="keyboard">
         <button className="button" onClick={() => this.props.onClearKey()}>C</button>
         <button className="button" onClick={() => this.props.onPlusMinusKey()}>+/-</button>
         <button className="button">%</button>

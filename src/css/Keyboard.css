@@ -1,4 +1,11 @@
 
 .button {
-    border-radius: 50%;
+    width: 3.5vw;
+    height: 3.5vh;
+}
+
+.keyboard {
+  /* background-color: gold; */
+  border: 1px solid black;
+  height: 55vh;
 }

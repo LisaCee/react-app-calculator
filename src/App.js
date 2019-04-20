@@ -13,3 +13,7 @@ class App extends React.Component {
 }
 
 export default App;
+
+// Exploring like this is fun, but I need to get 'er done
+// I think I'm going to put each row of buttons in its own little flexbox div
+// and then see where we can go from there. 
