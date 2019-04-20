@@ -1,7 +1,7 @@
 import React from 'react';
 import Keyboard from './Keyboard';
 import Display from './Display';
-// comment
+
 
 class Calculator extends React.Component {
     state = {
@@ -14,13 +14,19 @@ class Calculator extends React.Component {
     }
 
     handleKeyPress = (val) => {
-        let displayVal = "" + this.state.displayVal;
-        displayVal += val;
-        this.setState({ displayVal: displayVal });
+      let displayVal = this.state.displayVal === 0 ? "" : "" + this.state.displayVal;
+      displayVal += val;
+      this.setState({ displayVal: displayVal });
     }
 
     handleClearKey = () => {
         this.setState({ displayVal: 0 });
+    }
+
+    handlePlusMinusKey = () => {
+      let currentVal = this.state.displayVal;
+      currentVal = currentVal > 0 ? -Math.abs(currentVal) : Math.abs(currentVal);
+      this.setState({ displayVal: currentVal });
     }
 
     handleSignKey = (sign) => {
@@ -58,6 +64,7 @@ class Calculator extends React.Component {
                   onClearKey={this.handleClearKey}
                   onSignKey={this.handleSignKey}
                   onEqualsKey={this.handleEqualsKey}
+                  onPlusMinusKey={this.handlePlusMinusKey}
                 />
             </div>
         )
