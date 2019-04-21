@@ -34,6 +34,7 @@ class Keyboard extends React.Component {
         </div>
 
         <div className="row last-row">
+          <button className="button imaginary-btn"></button>
           <button className="button zero-btn" onClick={() => this.props.onKeyPress(this.props.keys[9])}>{this.props.keys[9]}</button>
           <button className="button" onClick={() => this.props.onKeyPress('.')}>.</button>
           <button className="button orng" onClick={() => this.props.onEqualsKey()}>=</button>

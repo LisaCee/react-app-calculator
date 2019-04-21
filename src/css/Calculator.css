@@ -1,7 +1,26 @@
-
-.calculator {
+/* .calculator {
     border: 1px solid silver;
     width: 20vw;
     height: 60vh;
     background-color: black;
+} */
+
+.calculator {
+  border: 1px solid silver;
+  width: 80%;
+  height: 65%;
+  background-color: black;
+  padding: 1%;
+}
+
+@media (min-width: 768px) {
+  .calculator {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+    .calculator {
+        width: 40%;
+    }
 }
